@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel World | Blooky Website</title>
+    <style>
+        body {
+            background-image: url("img/back.png");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .button {
+            padding: 8px 16px;
+            margin: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: inherit; 
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .kotak {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(212, 12, 212, 0.1);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .kotak p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">
+        <center>
+            <header>
+                <a href="Menu.html">
+                    <img src="img/world.png" alt="world" width="234" height="234" title="Pixel World">
+                </a>
+            </header>
+        </center>
+
+        <center>
+            <hr>
+            <nav>
+                <table cellspacing="5" cellpadding="5">
+                    <tr>
+                        <button class="button"><a href="menu.html">Home</a></button>
+                        <button class="button"><a href="product.html">Product</a></button>
+                        <button class="button"><a href="details.html">Details</a></button>
+                        <button class="button"><a href="about us.html">About Us</a></button>
+                        <button class="button"><a href="report.html">Report</a></button>
+                    </tr>
+                </table>
+            </nav>
+            </hr>
+        </center>
+
+        <center>
+
+        <h2>Behold the splendor of Pixel World</h2>
+
+        <p><b> A realm where pixels ignite into a symphony of animated grandeur! Venture into a tapestry woven by pixel sorcerers, where every frame pulses with the magic of storytelling. From epic odysseys across galaxies to tales of camaraderie that warm the heart, our animation projects stand as monuments to creativity. Unveil the veiled as we unravel our artistic process, and seize the chance to become one with characters through interactive escapades. Whether you're a sage of animation or a curious neophyte, Pixel World pledges an expedition into limitless imagination, all adorned with the beguiling charm of pixels. Prepare to immerse yourself in a saga that unfurls with a resplendent pixelated flourish! </b></p>
+
+
+<center>
+<hr>
+  <nav>
+    <tr>
+      <body>
+        <h2>Pixel World now can be accessed through</h2>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <div class="text"><b>Smartphone</b></div>
+    <img src="img/image 1.gif" alt="Image 1" width="426" height="238">
+</div>
+
+<div class="mySlides fade">
+    <div class="text"><b>Laptop</b></div>
+    <img src="img/image 2.gif" alt="Image 2" width="426" height="238">
+</div>
+
+<div class="mySlides fade">
+    <div class="text"><b>Tablet</b></div>
+    <img src="img/image 3.gif" alt="Image 3" width="426" height="238">
+</div>
+
+<button><a class="prev" onclick="plusSlides(-1)">&#10094;</a></button>
+<button><a class="next" onclick="plusSlides(1)">&#10095;</a></button>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+</script>
+  
+    </tr>
+  </table>
+  </nav>
+</hr>
+</center>
+
+<center>
+<hr>
+  <nav>
+    <tr>
+      <body>
+          <h2>
+        Our moto is that:
+        </h2>
+
+        </center>
+
+        <div>
+
+        <ul>
+            <p><b>Explore Pixels, Create Smiles in Pixel World!|Unleash Your Inner Creator!</b></p>
+        </ul> 
+
+        <ul>
+            <p><b>Learn, Create, Play|Pixel World Adventure!</b></p>
+        </ul> 
+
+        <ul>
+            <p><b>Pixels Forever|Where Imagination Takes Shape!</b></p>
+        </ul>
+        </div>
+    </tr>
+  </table>
+  </nav>
+</hr>
+</center>

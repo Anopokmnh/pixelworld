@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel World | Blooky Website</title>
+    <style>
+        body {
+            background-image: url("img/back.png");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .button {
+            padding: 8px 16px;
+            margin: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: inherit; 
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .kotak {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kotak p {
+            line-height: 2.1;
+            margin-bottom: 15px;
+        }
+        .runAwayButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .runAwayButton:hover {
+            background-color: #0056b3;
+        }
+        .message-container {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #000;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .message-container h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .message-container p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .message-container a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .message-container a:hover {
+            color: #007bff;
+        }
+
+        /* Adjust the width of the input box */
+        .message-container input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">
+        <center>
+            <header>
+                <a href="Menu.html">
+                    <img src="img/world.png" alt="world" width="234" height="234" title="Pixel World">
+                </a>
+            </header>
+        </center>
+        <hr>
+        <center>
+<hr>
+  <nav>
+  <table cellspacing="5" cellpadding= "5">
+    <tr>
+      <body>
+          <button class="button"><a href="menu.html">Home</a></button>
+          <button class="button"><a href="product.html">Product</a></button>
+          <button class="button"><a href="details.html">Details</a></button>
+          <button class="button"><a href="about us.html">About Us</a></button>
+          <button class="button"><a href="report.html">Report</a></button>
+      </body>
+    </tr>
+  </table>
+  </nav>
+</hr>
+</center>
+        <hr>
+        <b>What's The Issue:</b>
+        <input class="message-container"></input>
+        <button id="runAwayButton" class="runAwayButton">Report</button>
+    </div>
+
+    <script>
+        var runAwayButton = document.getElementById("runAwayButton");
+        function showWarning() {
+            alert("The button refuse to accept your report because you didn't wash your hands");
+        }
+        
+        // Attach event listeners
+        runAwayButton.addEventListener("click", showWarning);
+        runAwayButton.addEventListener("touchstart", showWarning);
+    </script>
+</body>
+</html>
